@@ -35,7 +35,7 @@
 
 .custom-toggle {
   position: fixed;
-  top: 10px;
+  top: 24px;
   right: 20px;
   font-size: 0;
   display: none;
@@ -100,17 +100,22 @@
 
 .nav-panel {
   background-color: $color-white;
-	// height:100%;
+	height: 0;
 	width: 0;
 	position:fixed;
 	z-index:1;
 	top:0px;
 	left:0px;
 	overflow-x:hidden;
-	padding-top:60px;
+	padding-top:90px;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
 
   &.open {
 		width: 100vw;
+    height: 24em;
 	}
 
   a:not(:first-child) {
@@ -168,7 +173,7 @@
 
 @media (max-width: 47.999em) {
   .custom-wrapper {
-      height: 3.5em;
+      height: 5.5em;
       position: fixed;
       width: 100vw;
       top: 0;

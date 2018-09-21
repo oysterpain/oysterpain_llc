@@ -5,13 +5,16 @@
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1.375rem;
   line-height: 22px;
   letter-spacing: 0.2em;
 }
+.title br {
+  display: none;
+}
 
 .pure-menu-disabled, .pure-menu-heading, .pure-menu-link {
-  padding: 20px;
+  padding: 15px 20px;
 }
 
 .pure-menu-link {
@@ -20,6 +23,7 @@
 
 .pure-menu-active > .pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {
   font-weight: 700;
+  background-color: #ffffff;
 }
 
 @media (max-width: 47.999em) {
@@ -31,9 +35,22 @@
     display: block;
   }
 
+  .pure-menu-active > .pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {
+    font-weight: 700;
+    background-color: #c1c1c1;
+  }
+
   .title {
+    font-size: 1.125rem;
+    font-weight: 700;
     position: fixed;
     z-index: 2;
+  }
+  .title br {
+    display: inline;
+  }
+  .title span {
+    display: none;
   }
 }
 html,
@@ -71,6 +88,12 @@ body {
 article {
   padding: 10px 20px 0 20px;
   margin: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  line-height: 22px;
+  letter-spacing: 0.2em;
 }
 
 h1 {
@@ -138,6 +161,11 @@ p {
   display: none;
 }
 
+@media (max-width: 47.999em) {
+  article {
+    margin: 70px 0;
+  }
+}
 /* Navigation */
 .navbar {
   -webkit-transform: translateY(100%);
@@ -173,7 +201,7 @@ p {
 
 .custom-toggle {
   position: fixed;
-  top: 10px;
+  top: 24px;
   right: 20px;
   font-size: 0;
   display: none;
@@ -229,16 +257,22 @@ p {
 
 .nav-panel {
   background-color: #ffffff;
+  height: 0;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0px;
   left: 0px;
   overflow-x: hidden;
-  padding-top: 60px;
+  padding-top: 90px;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  -ms-transition: height 0.5s;
+  transition: height 0.5s;
 }
 .nav-panel.open {
   width: 100vw;
+  height: 24em;
 }
 .nav-panel a:not(:first-child) {
   color: #c1c1c1;
@@ -291,7 +325,7 @@ p {
 }
 @media (max-width: 47.999em) {
   .custom-wrapper {
-    height: 3.5em;
+    height: 5.5em;
     position: fixed;
     width: 100vw;
     top: 0;

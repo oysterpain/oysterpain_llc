@@ -38,6 +38,12 @@ article {
 
 // typography
 
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+}
+
 h1 {
   font-size: $font-size-xxxlg;
 }
@@ -103,4 +109,10 @@ p {
 
 .hidden-sm {
   display: none;
+}
+
+@media (max-width: 47.999em) {
+  article {
+    margin: 70px 0;
+  }
 }
