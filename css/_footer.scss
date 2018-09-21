@@ -1,0 +1,35 @@
+/*footer*/
+
+footer {
+    font-family: $font-family-s;
+    font-style: italic;
+    text-align: center;
+    font-size: $font-size-sm;
+    color: $color-primary-2;
+    flex-shrink: 0;
+    padding: 20px;
+
+    a {
+    	display: inline-block;
+    	padding: 10px;
+    }
+
+    .copyright {
+      margin: 0;
+      padding: 10px;
+      font-size: $font-size-sm;
+      font-weight: $font-weight-regular;
+    }
+}
+
+@media (max-width: 47.999em) {
+  footer {
+    text-align: left;
+
+    a,
+    .copyright {
+      display: block;
+      padding: 0;
+    }
+  }
+}
