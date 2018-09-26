@@ -398,9 +398,6 @@ footer .copyright {
 .infini-slide .img-wrap {
   animation: moveSlideshow 60s linear infinite;
 }
-.infini-slide:hover .img-wrap {
-  animation-play-state: paused;
-}
 
 @keyframes moveSlideshow {
   100% {

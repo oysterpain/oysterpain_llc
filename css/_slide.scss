@@ -20,10 +20,6 @@
   .img-wrap {
     animation: moveSlideshow 60s linear infinite;
   }
-
-  &:hover .img-wrap {
-    animation-play-state: paused;
-  }
 }
 
 @keyframes moveSlideshow {
