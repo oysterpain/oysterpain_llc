@@ -74,6 +74,7 @@ body {
   font-family: "Lato", Helvetica, sans-serif;
   color: #3c3c3c;
   line-height: 1.5;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -83,10 +84,11 @@ body {
 
 .main {
   flex: 1 0 auto;
+  padding-bottom: 7.5em;
 }
 
 article {
-  padding: 10px 20px 0 20px;
+  padding: 20px 20px 0 20px;
   margin: 10px 0;
 }
 
@@ -372,6 +374,37 @@ footer .copyright {
 footer .copyright {
     display: block;
     padding: 0;
+  }
+}
+.infini-slide {
+  height: 540px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+.infini-slide > div {
+  height: 540px;
+  width: 5832px;
+  background: url(../assets/img/collage.jpg);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.infini-slide .img-wrap {
+  animation: moveSlideshow 60s linear infinite;
+}
+.infini-slide:hover .img-wrap {
+  animation-play-state: paused;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-66.66%);
   }
 }
 

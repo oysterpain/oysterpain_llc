@@ -39,18 +39,12 @@
 
   window.addEventListener('scroll', function() {
     var navbar = document.getElementById('navbar');
-    console.log("scrolling");
-    var d = document.documentElement;
-    var offset = d.scrollTop + window.innerHeight;
-    var height = d.offsetHeight;
-
-    console.log('offset = ' + offset);
-    console.log('height = ' + height);
+    
     if(navbar.classList.contains('viewport-bottom')){
       navbar.classList.remove('viewport-bottom');
     }
 
-    if (offset === Math.ceil((height*1.1))) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
       console.log('At the bottom');
       navbar.classList.add('viewport-bottom');
     }

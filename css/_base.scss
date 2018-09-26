@@ -20,6 +20,7 @@ body {
   font-family: $font-family-p;
   color: $color-primary-1;
   line-height: $font-height;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -29,10 +30,11 @@ body {
 
 .main {
   flex: 1 0 auto;
+  padding-bottom: 7.5em;
 }
 
 article {
-  padding: 10px 20px 0 20px;
+  padding: 20px 20px 0 20px;
   margin: 10px 0;
 }
 
