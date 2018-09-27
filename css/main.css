@@ -45,6 +45,8 @@
     font-weight: 700;
     position: fixed;
     z-index: 2;
+    top: 20px;
+    padding: 0 20px;
   }
   .title br {
     display: inline;
@@ -74,6 +76,8 @@ body {
   font-family: "Lato", Helvetica, sans-serif;
   color: #3c3c3c;
   line-height: 1.5;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -161,6 +165,36 @@ p {
 
 .hidden-sm {
   display: none;
+}
+
+.arrow-left {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 10px solid #c1c1c1;
+  margin-top: 10px;
+  margin-right: 5px;
+  transition: border-color 0.15s linear;
+}
+.arrow-left:hover {
+  border-right: 10px solid #1c1c1c;
+}
+
+.arrow-right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid #c1c1c1;
+  margin-top: 10px;
+  margin-left: 5px;
+  transition: border-color 0.15s linear;
+}
+.arrow-right:hover {
+  border-left: 10px solid #1c1c1c;
 }
 
 @media (max-width: 47.999em) {
@@ -376,33 +410,58 @@ footer .copyright {
     padding: 0;
   }
 }
-.infini-slide {
-  height: 540px;
-  max-width: 100%;
-  margin: 0 auto;
+.slider-wrap {
+  width: 100%;
   position: relative;
   overflow: hidden;
-  transform: translate3d(0, 0, 0);
-}
-.infini-slide > div {
-  height: 540px;
-  width: 5832px;
-  background: url(../assets/img/collage.jpg);
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  transform: translate3d(0, 0, 0);
-}
-.infini-slide .img-wrap {
-  animation: moveSlideshow 60s linear infinite;
+  margin: 0 auto;
 }
 
-@keyframes moveSlideshow {
-  100% {
-    transform: translateX(-66.66%);
-  }
+.slider {
+  width: 100%;
+  position: relative;
+}
+.slider .slider__content {
+  width: auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: translate3d(0, 0, 0);
+}
+.slider .slider__content .item {
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 300px;
+  position: relative;
+  border-right: 10px solid white;
+}
+.slider .slider__content .item .slide-capt {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: -33px 0 0 0;
+  padding: 0;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.3rem;
+  color: #FFF;
+}
+.slider .slider__content .item .slide-capt--sub {
+  margin-top: 20px;
+  font-size: 1.2em;
+  opacity: 0.5;
+}
+.slider .slider__content .item img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 550px;
+  display: block;
+}
+.slider .slider__nav {
+  width: 100%;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

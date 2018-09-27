@@ -20,6 +20,8 @@ body {
   font-family: $font-family-p;
   color: $color-primary-1;
   line-height: $font-height;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -111,6 +113,38 @@ p {
 
 .hidden-sm {
   display: none;
+}
+
+.arrow-left {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 10px solid $color-secondary-2;
+  margin-top: 10px;
+  margin-right: 5px;
+  transition: border-color .15s linear;
+
+  &:hover{
+      border-right: 10px solid $color-primary-2;
+  }
+}
+
+.arrow-right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 10px solid $color-secondary-2;
+  margin-top: 10px;
+  margin-left: 5px;
+  transition: border-color .15s linear;
+
+  &:hover{
+      border-left: 10px solid $color-primary-2;
+  }
 }
 
 @media (max-width: 47.999em) {
