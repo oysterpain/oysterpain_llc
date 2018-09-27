@@ -37,7 +37,7 @@
 
   .pure-menu-active > .pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {
     font-weight: 700;
-    background-color: #c1c1c1;
+    background-color: #f8f8f8;
   }
 
   .title {
@@ -308,7 +308,7 @@ p {
 }
 .nav-panel.open {
   width: 100vw;
-  height: 24em;
+  height: 12.4em;
 }
 .nav-panel a:not(:first-child) {
   color: #c1c1c1;
