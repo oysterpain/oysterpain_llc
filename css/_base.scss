@@ -40,6 +40,10 @@ article {
   margin: 10px 0;
 }
 
+video {
+  object-fit: fill;
+}
+
 // typography
 
 h1, h2, h3, h4, h5, h6 {
@@ -123,7 +127,7 @@ p {
   border-bottom: 7px solid transparent;
   border-right: 10px solid $color-secondary-2;
   margin-top: 10px;
-  margin-right: 5px;
+  margin-right: 10px;
   transition: border-color .15s linear;
 
   &:hover{
@@ -139,7 +143,7 @@ p {
   border-bottom: 7px solid transparent;
   border-left: 10px solid $color-secondary-2;
   margin-top: 10px;
-  margin-left: 5px;
+  margin-left: 10px;
   transition: border-color .15s linear;
 
   &:hover{
@@ -150,5 +154,10 @@ p {
 @media (max-width: 47.999em) {
   article {
     margin: 70px 0;
+    padding: 0;
+  }
+
+  .arrow-left {
+    margin-left: 20px;
   }
 }

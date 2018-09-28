@@ -43,7 +43,7 @@
         opacity: .5;
       }
 
-      img {
+      img, video {
         width: 100%;
         max-width: 100%;
         max-height: 550px;
@@ -55,5 +55,11 @@
   .slider__nav {
     width: 100%;
     z-index: 1;
+  }
+}
+
+@media (max-width: 47.999em) {
+  .slider .slider__content .item {
+    border: none;
   }
 }
