@@ -440,7 +440,6 @@ footer .copyright {
   display: block;
   float: left;
   width: 100%;
-  min-height: 300px;
   position: relative;
   border-right: 10px solid white;
 }
