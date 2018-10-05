@@ -152,9 +152,8 @@ p {
 }
 
 @media (max-width: 47.999em) {
-  article {
-    margin: 70px 0;
-    padding: 0;
+  body {
+    padding-top: 70px;
   }
 
   .arrow-left {

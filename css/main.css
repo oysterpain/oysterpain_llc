@@ -202,9 +202,8 @@ p {
 }
 
 @media (max-width: 47.999em) {
-  article {
-    margin: 70px 0;
-    padding: 0;
+  body {
+    padding-top: 70px;
   }
 
   .arrow-left {
@@ -480,6 +479,10 @@ footer .copyright {
 @media (max-width: 47.999em) {
   .slider .slider__content .item {
     border: none;
+  }
+
+  .slider-artc {
+    padding: 0;
   }
 }
 
