@@ -57,7 +57,7 @@
     } else {
       return sliderContent.transition({
         x: `${sliderIndex * -itemWidth}%`
-      }, 1000, "easeInOutExpo", function() {
+      }, 1000, "linear", function() {
         return isAnimating = false;
       });
     }
