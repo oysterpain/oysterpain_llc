@@ -66,8 +66,6 @@
     });
   };
 
-  // while(true){
   animateSlider();
-  // }
 
 }).call(this);
