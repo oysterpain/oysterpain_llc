@@ -472,6 +472,10 @@ footer .copyright {
   width: 100%;
   z-index: 1;
 }
+.slider .slider__nav .nav--left:hover,
+.slider .slider__nav .nav--right:hover {
+  cursor: pointer;
+}
 
 @media (max-width: 47.999em) {
   .slider .slider__content .item {
